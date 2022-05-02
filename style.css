@@ -10,6 +10,7 @@ body{
     font-family: 'Libre Franklin', sans-serif;
 }
 html{
+    overflow-x: hidden;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -88,12 +89,18 @@ a{
     transition: 1s;
 }
 .container-conteudo{
-    
+    width: 850px;
     margin-top: 50px;
     padding: 0px 80px;
     display: flex;
     align-items: center;
     
+}
+.container-conteudo > p {
+    margin: 20px;
+}
+.container-conteudo > p > span{
+    color: #f4d10ac9;
 }
 .container-caixa{
     margin-top: 3%;
@@ -122,9 +129,22 @@ a{
 }
 .div-img{
     overflow: hidden;
-    height: 150px;
+    height: 145px;
     width: 300px;
     background-color: rgb(43, 48, 53);
+}
+.div-img > img{
+    width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.div-img > img:hover{
+    
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
 }
 .bklnm{
     overflow: hidden;
@@ -163,7 +183,6 @@ a{
     top: 16px;
     padding: 0px 16px;
     height: auto;
-    display: flex;
     flex-direction: column;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -179,25 +198,14 @@ a{
     font-weight: bold;
     margin-bottom: 5px;
 }
-.img-caixa:hover{
-
-    transition: 0.3s;
-
-}
 .dradl{
     margin-top: 10px;
+    color: white;
     text-align: center;
     width: 100%;
     padding: 0px 16px;
 }
-.dradl h1{
-    color: white;
-    font-size: 25px;
-    margin-top: 0px;
-    font-weight: 500;
-}
 .dradl p{
-    color: white;
     margin-top: 10px;
 }
 .drwap{
@@ -226,4 +234,24 @@ button{
 .bto-detalhes:hover{
     width: 85%;
     transition: 0.3s;
+}
+.nbvki{
+    
+    padding: 30px 100px;
+    background-color: #1a1c1f;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.nklos{
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+.fosder{
+    display: flex;
+    align-items: center;
+}
+.paragrafo-footer{
+    color: #f4cf0a;
 }
