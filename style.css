@@ -121,10 +121,6 @@ a{
     position: relative;
     overflow: hidden;
 }
-.caixa-project:hover{
-    background-color: rgba(103, 102, 102, 0.543);
-    transition: 0.3s;
-}
 .div-img{
     overflow: hidden;
     height: 150px;
@@ -222,4 +218,8 @@ button{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.25s ease 0s;
+}
+.bto-detalhes:hover{
+    width: 85%;
+    transition: 0.3s;
 }
