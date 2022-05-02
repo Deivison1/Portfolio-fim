@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    color: white;
+    background-color: black;
+    font-family: 'Libre Franklin', sans-serif;
+}
+html{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+header{
+    
+    padding: 10px;
+}
+.header-container{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0px 80px;
+    margin-top: 40px;
+    font-weight: normal;
+    
+}
+.paragrafo-reader{
+    color: #f4cf0a;
+}
+.container-principal{
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+nav{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+a{
+    margin: 2px;
+    padding: 3px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.historia{
+    color: #f4cf0a;  
+}
+.historia:hover{
+    color: #f4d10ac9;
+    transition: 1s;
+}
+.link-reader{
+    color: white;
+}
+.link-reader:hover{
+    color: rgb(154, 150, 150);
+    transition: 1s;
+}
+.link-github{
+    
+    background-color: rgb(86 86 86 / 75%);
+    width: 100px;
+    padding: 2px 15px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    
+}
+.link-github:hover{
+    color: rgb(154, 150, 150);
+    background-color: rgba(74, 74, 74, 0.75);;
+    transition: 1s;
+}
+.container-conteudo{
+    
+    margin-top: 50px;
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    
+}
+.container-caixa{
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.caixa-project{
+
+    
+    background-color: rgba(84, 83, 83, 0.291);
+    height: 350px; 
+    width: 300px;
+    border-radius: 16px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.caixa-project:hover{
+    background-color: rgba(103, 102, 102, 0.543);
+    transition: 0.3s;
+}
+.div-img{
+    overflow: hidden;
+    height: 150px;
+    width: 300px;
+    background-color: rgb(43, 48, 53);
+}
+.bklnm{
+    overflow: hidden;
+    height: 150px;
+    width: 300px;
+    background-color: rgb(43, 48, 53);
+}
+.lmkda{
+    position: absolute;
+    right: 0px;
+    top: 16px;
+    padding: 0px 16px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 999;
+}
+.tech{
+    background-color: rgba(84,84,84,0.75);;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--white);
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 13px;
+}
+.blsder{
+    position: absolute;
+    left: 0px;
+    top: 16px;
+    padding: 0px 16px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 999;
+}
+.cvdrt{
+    background-color: #47ade1;
+    padding: 6px 16px;
+    font-size: 11px;
+    height: 23px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.dradl{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    padding: 0px 16px;
+}
+.dradl h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+.dradl p{
+    color: white;
+    margin-top: 10px;
+}
+.drwap{
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    appearance: none;
+    border: none;
+}
+.bto-detalhes{
+    width: 80%;
+    height: 46px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: purple;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
+}
