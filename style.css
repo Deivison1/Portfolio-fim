@@ -25,7 +25,7 @@ header{
     -webkit-box-pack: justify;
     justify-content: space-between;
     padding: 0px 80px;
-    margin-top: 25px;
+    margin-top: 20px;
     font-weight: normal;
     
 }
@@ -53,18 +53,12 @@ header{
     font-weight: 400;
 }
 a{
-    margin: 2px;
+    margin: 5px;
     padding: 3px;
     border-radius: 10px;
     text-decoration: none;
 }
-.historia{
-    color: #f4cf0a;  
-}
-.historia:hover{
-    color: #f4d10ac9;
-    transition: 1s;
-}
+
 .link-reader{
     color: white;
 }
@@ -80,15 +74,18 @@ a{
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: #f4cf0a;
     
 }
 .link-github:hover{
-    color: rgb(154, 150, 150);
+    color: #f4d10ac9;
     background-color: rgba(74, 74, 74, 0.75);;
     transition: 1s;
 }
 .container-conteudo{
+    margin-top: 70px;
+}
+.conteudo{
     width: 850px;
     margin-top: 50px;
     padding: 0px 80px;
@@ -96,14 +93,15 @@ a{
     align-items: center;
     
 }
-.container-conteudo > p {
+.conteudo > p {
     margin: 20px;
 }
-.container-conteudo > p > span{
+.conteudo > p > span{
     color: #f4d10ac9;
 }
 .container-caixa{
-    margin-top: 3%;
+    margin-top: 10%;
+
     display: flex;
     flex-wrap: wrap;
     max-width: 100vw;
