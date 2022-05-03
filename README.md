@@ -11,8 +11,6 @@
   </ul>
 </nav>
 <div>
-< img src="![image](https://user-images.githubusercontent.com/99504339/166507636-a552bf94-77e6-4731-a846-027b0489e8db.png)
-" alt="">
-< img src="![image](https://user-images.githubusercontent.com/99504339/166507969-d7a6ec36-703c-47f8-91d9-45a330b96cd1.png)
-" alt="">
+< img src="https://github.com/Deivison1/Portfolio-test/blob/main/Captura-site1png.png" alt="">
+< img src="https://github.com/Deivison1/Portfolio-test/blob/main/Captura-site.png" alt="">
   </div>
