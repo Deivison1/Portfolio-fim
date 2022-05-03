@@ -63,16 +63,17 @@ a{
     color: white;
 }
 .link-reader:hover{
-    color: rgb(154, 150, 150);
+    color: #f4cf0a;
     transition: 1s;
 }
 .link-github{
     
     background-color: rgb(86 86 86 / 75%);
     width: 100px;
-    padding: 2px 15px;
+    padding: 3px 10px;
     border-radius: 25px;
     text-align: center;
+    justify-content: center;
     text-decoration: none;
     color: #f4cf0a;
     
@@ -83,25 +84,33 @@ a{
     transition: 1s;
 }
 .container-conteudo{
+    height: auto;
     margin-top: 70px;
 }
 .conteudo{
-    width: 850px;
+    
     margin-top: 50px;
     padding: 0px 80px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    background-color: #1a1c1f;;
+}
+.conteudo-img{
     
+    margin-top: 20px;
+    animation: move 1s infinite alternate;
 }
 .conteudo > p {
-    margin: 20px;
+    width: 600px;
+    margin: 25px;
 }
 .conteudo > p > span{
     color: #f4d10ac9;
 }
 .container-caixa{
     margin-top: 10%;
-
+    margin-bottom: 5%;
     display: flex;
     flex-wrap: wrap;
     max-width: 100vw;
@@ -124,6 +133,11 @@ a{
     align-items: center;
     position: relative;
     overflow: hidden;
+}
+.caixa-project:hover{
+    transition: 0.3s;
+    box-shadow: 0.5px 3px 3px 3px rgba(255, 255, 255, 0.329);
+
 }
 .div-img{
     overflow: hidden;
@@ -237,7 +251,7 @@ button{
     transition: 0.3s;
 }
 .nbvki{
-    
+    height: auto;
     padding: 30px 100px;
     background-color: #1a1c1f;
     display: flex;
@@ -249,10 +263,57 @@ button{
     font-weight: bold;
     color: white;
 }
-.fosder{
+.fsdr{
     display: flex;
     align-items: center;
+    
 }
 .paragrafo-footer{
     color: #f4cf0a;
+}
+@keyframes move {
+    from {
+        transform: translateY(10px)
+    }
+    to {
+        transform: translateY(-10px)
+    }
+}
+@media screen and (max-width: 768px){
+    .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container-principal{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-menu{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .conteudo{
+        font-size: 13px;
+        flex-direction: column;
+    }
+    .conteudo-img{
+        
+        height: 250px;
+        width: 250px;
+        flex-direction: column;
+    }
+    .nbvki{
+        height: auto;
+        flex-direction: column;
+    }
+    .fsdr{
+        flex-direction: column;
+    }
+    .nklos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
