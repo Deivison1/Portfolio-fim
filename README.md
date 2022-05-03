@@ -11,6 +11,6 @@
   </ul>
 </nav>
 
-<img src="https://github.com/Deivison1/Portfolio-test/blob/main/Captura-site1png.png" alt="">
-<img src="https://github.com/Deivison1/Portfolio-test/blob/main/Captura-site.png" alt="">
+<img src="https://github.com/Deivison1/Portfolio-test/blob/main/Site%20pessoal1024_1.png" alt="">
+
   </div>
