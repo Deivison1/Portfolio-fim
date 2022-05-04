@@ -4,11 +4,34 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    color: white;
-    background-color: black;
-    font-family: 'Libre Franklin', sans-serif;
+:root{
+    --cvdrt-color: #47ade1;
+    --tech-color:rgba(84,84,84,0.75);;
+    --destaque-color:#f4cf0a;
+    --body-color:black;
+    --text-color:white;
+    --button-color:purple;
+    --box-shadow-color:rgb(80, 61, 80);
+    --caixa-project-color:rgba(84, 83, 83, 0.291);
 }
+.light-mode:root{
+    --cvdrt-color: #47ade1;
+    --tech-color:rgba(84,84,84,0.75);;
+    --destaque-color:#f4cf0a;
+    --body-color:white;
+    --text-color:#555;
+    --button-color:rgb(249, 201, 249);
+    --box-shadow-color:rgb(35, 34, 35);
+    --caixa-project-color:rgb(92, 227, 248); 
+}
+
+body{
+    color: var(--text-color);
+    background-color: var(--body-color);
+    font-family: 'Libre Franklin', sans-serif;
+    transition: 0.2s;
+}
+
 html{
     overflow-x: hidden;
     font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -30,13 +53,50 @@ header{
     
 }
 .paragrafo-reader{
-    color: #f4cf0a;
+    color: var(--destaque-color)
+}
+.checkbox{
+    opacity: 0;
+
+}
+.labLabel{
+    height: 15px;
+    width: 39px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: var(--text-color); 
+}
+label .ball{
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--body-color);
+    transform: translate(0px);
+    transition: 0.3s;
+   
+}
+.checkbox:checked + label .ball{
+    transform: translateX(24px);
 }
 .container-principal{
     height: auto;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+}
+.bxs-moon{
+    color: var(--body-color);
+}
+.bx-sun{
+    color: var(--destaque-color);
 }
 .menu{
     
@@ -63,7 +123,7 @@ a{
     color: white;
 }
 .link-reader:hover{
-    color: #f4cf0a;
+    color: var(--destaque-color);
     transition: 1s;
 }
 .link-github{
@@ -75,7 +135,7 @@ a{
     padding: 3px 12px;
     border-radius: 25px;
     text-decoration: none;
-    color: #f4cf0a;
+    color:var(--destaque-color);
     background-color: rgb(86 86 86 / 75%);
 }
 .link-github:hover{
@@ -107,7 +167,7 @@ a{
     margin: 25px;
 }
 .conteudo > p > span{
-    color: #f4d10ac9;
+    color: var(--destaque-color)
 }
 .container-caixa{
     margin-top: 10%;
@@ -123,7 +183,7 @@ a{
 
 .caixa-project{
 
-    background-color: rgba(84, 83, 83, 0.291);
+    background-color: var(--caixa-project-color);
     height: 370px; 
     width: 300px;
     border-radius: 16px;
@@ -137,7 +197,7 @@ a{
 }
 .caixa-project:hover{
     transition: 0.3s;
-    box-shadow: 0.5px 2px 2px 2px rgb(80, 61, 80);
+    box-shadow: 0.5px 2px 2px 2px var(--box-shadow-color);
 
 }
 .div-img{
@@ -157,7 +217,6 @@ a{
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-
 }
 .bklnm{
     overflow: hidden;
@@ -179,7 +238,7 @@ a{
     z-index: 999;
 }
 .tech{
-    background-color: rgba(84,84,84,0.75);;
+    background-color: var(--tech-color);
     padding: 5px 15px;
     margin-bottom: 5px;
     border-radius: 25px;
@@ -204,7 +263,7 @@ a{
     z-index: 999;
 }
 .cvdrt{
-    background-color: #47ade1;
+    background-color:var(--cvdrt-color);
     padding: 6px 16px;
     font-size: 11px;
     border-radius: 20px;
@@ -222,7 +281,7 @@ a{
     margin-top: 10px;
 }
 .dradl > p >.cxsd{
-    color: #f4cf0a;
+    color: var(--destaque-color)
 }
 .drwap{
     text-decoration: none;
@@ -239,8 +298,8 @@ button{
     bottom: 16px;
     left: 50%;
     transform: translateX(-50%);
-    background: purple;
-    color: white;
+    background: var(--button-color);
+    color: var(--text-color);
     font-weight: bold;
     font-size: 18px;
     border-radius: 50px;
@@ -263,14 +322,14 @@ button{
     color:rgb(124, 121, 121) ;
     font-size: 24px;
 }
-.bx:hover{
-    color: #f4cf0a;
+.bxl:hover{
+    color: var(--destaque-color);
     transition: 0.3s;
 }
 .nklos{
     font-size: 10px;
     font-weight: bold;
-    color: white;
+    color: var(--text-color)
 }
 .fsdr{
     display: flex;
@@ -278,7 +337,7 @@ button{
     
 }
 .paragrafo-footer{
-    color: #f4cf0a;
+    color: var(--destaque-color)
 }
 @keyframes move {
     from {
