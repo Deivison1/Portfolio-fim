@@ -260,8 +260,12 @@ button{
     justify-content: space-between;
 }
 .fsdr i{
+    color:rgb(124, 121, 121) ;
     font-size: 24px;
-    
+}
+.bx:hover{
+    color: #f4cf0a;
+    transition: 0.3s;
 }
 .nklos{
     font-size: 10px;
