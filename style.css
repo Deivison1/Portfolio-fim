@@ -67,16 +67,16 @@ a{
     transition: 1s;
 }
 .link-github{
-    
-    background-color: rgb(86 86 86 / 75%);
+
     width: 100px;
-    padding: 3px 10px;
-    border-radius: 25px;
-    text-align: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    padding: 3px 12px;
+    border-radius: 25px;
     text-decoration: none;
     color: #f4cf0a;
-    
+    background-color: rgb(86 86 86 / 75%);
 }
 .link-github:hover{
     color: #f4d10ac9;
@@ -258,6 +258,10 @@ button{
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
+}
+.fsdr i{
+    font-size: 24px;
+    
 }
 .nklos{
     font-size: 10px;
