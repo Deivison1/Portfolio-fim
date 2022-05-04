@@ -92,9 +92,9 @@ a{
     margin-top: 50px;
     padding: 0px 80px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    background-color: #1a1c1f;;
+    align-items: center;
+    
 }
 .conteudo-img{
     
@@ -102,7 +102,8 @@ a{
     animation: move 1s infinite alternate;
 }
 .conteudo > p {
-    width: 600px;
+    line-height: 1.5;
+    font-size: medium;
     margin: 25px;
 }
 .conteudo > p > span{
@@ -110,7 +111,7 @@ a{
 }
 .container-caixa{
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     display: flex;
     flex-wrap: wrap;
     max-width: 100vw;
@@ -136,7 +137,7 @@ a{
 }
 .caixa-project:hover{
     transition: 0.3s;
-    box-shadow: 0.5px 3px 3px 3px rgba(255, 255, 255, 0.329);
+    box-shadow: 0.5px 2px 2px 2px rgb(80, 61, 80);
 
 }
 .div-img{
@@ -287,6 +288,7 @@ button{
     }
     .container-principal{
         display: flex;
+        text-align: center;
         align-items: center;
         flex-direction: column;
     }
@@ -306,14 +308,12 @@ button{
     }
     .nbvki{
         height: auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
         flex-direction: column;
     }
     .fsdr{
-        flex-direction: column;
-    }
-    .nklos{
-        display: flex;
-        align-items: center;
         flex-direction: column;
     }
 }
