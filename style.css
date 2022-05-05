@@ -38,7 +38,7 @@ body{
     color: var(--text-color);
     background-color: var(--body-color);
     font-family: 'Libre Franklin', sans-serif;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 html{
