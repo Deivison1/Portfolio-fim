@@ -6,7 +6,7 @@
 }
 :root{
     --cvdrt-color: #47ade1;
-    --tech-color:rgba(84,84,84,0.75);
+    --tech-color:rgba(84,84,84,0.75);;
     --destaque-color:#f4cf0a;
     --body-color:black;
     --text-color:white;
@@ -22,14 +22,14 @@
     --text-color:#555;
     --button-color:rgb(249, 201, 249);
     --box-shadow-color:rgb(35, 34, 35);
-    --caixa-project-color:rgb(92, 227, 248);
+    --caixa-project-color:rgb(92, 227, 248); 
 }
 
 body{
     color: var(--text-color);
     background-color: var(--body-color);
     font-family: 'Libre Franklin', sans-serif;
-    
+    transition: 0.2s;
 }
 
 html{
@@ -40,7 +40,6 @@ html{
 header{
     
     padding: 10px;
-    
 }
 .header-container{
     display: flex;
@@ -58,6 +57,7 @@ header{
 }
 .checkbox{
     opacity: 0;
+
 }
 .labLabel{
     height: 15px;
@@ -87,7 +87,6 @@ label .ball{
     transform: translateX(24px);
 }
 .container-principal{
-
     height: auto;
     margin-top: 20px;
     display: flex;
@@ -106,10 +105,9 @@ label .ball{
     flex-direction: row-reverse;
 }
 .nav-menu{
-    margin-top: -40px;
     display: flex;
-    align-items: center;
     -webkit-box-align: center;
+    align-items: center;
     list-style-type: none;
     font-size: 20px;
     font-weight: 400;
@@ -318,7 +316,6 @@ button{
     background-color: #1a1c1f;
     display: flex;
     -webkit-box-pack: justify;
-    align-items: center;
     justify-content: space-between;
 }
 .fsdr i{
