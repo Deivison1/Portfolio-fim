@@ -14,7 +14,7 @@
     --box-shadow-color:rgb(80, 61, 80);
     --caixa-project-color:rgba(84, 83, 83, 0.291);
 }
-.light-mode:root{
+.light-mode{
     --cvdrt-color: #47ade1;
     --tech-color:rgba(84,84,84,0.75);;
     --destaque-color:#f4cf0a;
