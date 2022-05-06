@@ -8,11 +8,13 @@
     --cvdrt-color: #47ade1;
     --titulo-menu: white;
     --link-reader: white;
+    --para-color:#f4cf0a;
     --icon-git:rgb(124, 121, 121);
     --tech-back-color:rgba(84,84,84,0.75);
     --destaque-color:#f4cf0a;
     --body-color:black;
     --entrar-back-color:rgb(81, 78, 78);
+    --dradl-h1-clor:white;
     --text-color:white;
     --back-reader-footer: #212427;
     --h1-footer-color:white;
@@ -25,14 +27,15 @@
     --icon-git:white;
     --teck-color:white;
     --tech-back-color:rgba(84,84,84,0.75);
-    --destaque-color:#debf11;
+    --destaque-color:black;
     --body-color:white;
+    --dradl-h1-clor:black;
     --text-color:rgb(22, 21, 21);
     --back-reader-footer:rgba(0, 0, 0, 0.518);
     --footer-color:white;
     --button-color:silver;
     --box-shadow-color:rgb(35, 34, 35);
-    --caixa-project-color:rgba(0, 0, 0, 0.518); 
+    --caixa-project-color:rgba(73, 70, 70, 0.139); 
 }
 
 body{
@@ -67,7 +70,7 @@ header{
     color:var(--titulo-menu)
 }
 .paragrafo-reader{
-    color: var(--destaque-color)
+    color: var(--para-color)
 }
 .container-principal{
 
@@ -138,7 +141,7 @@ a{
     color: var(--link-reader);
 }
 .link-reader:hover{
-    color: var(--destaque-color);
+    color: #f4cf0a;
     transition: 1s;
 }
 .link-github{
@@ -180,9 +183,11 @@ a{
     animation: move 1s infinite alternate;
 }
 .conteudo > p {
-    line-height: 1.5;
-    font-size: 18px;
-    margin: 25px;
+    font-size: 1em;
+    line-height: 2em;
+    text-indent: 30px;
+    text-align: justify;
+    margin: 15px 0px 15px 0px;
 }
 .conteudo > p > span{
     color: var(--destaque-color)
@@ -215,7 +220,7 @@ a{
 }
 .caixa-project:hover{
     transition: 0.3s;
-    box-shadow: 0.5px 2px 2px 2px var(--box-shadow-color);
+    box-shadow: 1px 1px 6px 2px var(--box-shadow-color);
 
 }
 .div-img{
@@ -290,13 +295,17 @@ a{
     margin-bottom: 5px;
 }
 .dradl{
+    color: var(--dradl-h1-clor);
     margin-top: 10px;
-    color: white;
     text-align: center;
     width: 100%;
     padding: 0px 16px;
 }
 .dradl p{
+
+    font-size: 1em;
+    line-height: 1.4em;
+    text-indent: 5px;
     margin-top: 10px;
 }
 .dradl > p >.cxsd{
@@ -346,7 +355,7 @@ button{
     font-size: 24px;
 }
 .bxl:hover{
-    color: var(--destaque-color);
+    color: #f4cf0a;
     transition: 0.3s;
 }
 .nklos{
@@ -361,7 +370,7 @@ button{
 }
 .paragrafo-footer{
     font-size: 13px;
-    color: var(--destaque-color)
+    color: var(--para-color)
 }
 @keyframes move {
     from {
