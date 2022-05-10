@@ -19,6 +19,7 @@
     --back-reader-footer: #212427;
     --h1-footer-color:white;
     --button-color:purple;
+    --body-gradient:rgb(101, 33, 101);
     --box-shadow-color:rgb(80, 61, 80);
     --caixa-project-color:rgba(84, 83, 83, 0.393);
 }
@@ -40,7 +41,7 @@
 
 body{
     color: var(--text-color);
-    background-color: var(--body-color);
+    background-color:var(--body-color);
     font-family: 'Libre Franklin', sans-serif;
     transition: 0.6s;
 }
@@ -347,6 +348,10 @@ button{
     align-items: center;
     justify-content: space-between;
 }
+.fsdr{
+    display: flex;
+    align-items: center;
+}
 .fsdr h3{
     color: var(--h1-footer-color);
 }
@@ -363,23 +368,19 @@ button{
     font-weight: bold;
     color: var(--footer-color)
 }
-.fsdr{
-    display: flex;
-    align-items: center;
-    
-}
+
 .paragrafo-footer{
     font-size: 13px;
     color: var(--para-color)
 }
-@keyframes move {
+/*@keyframes move {
     from {
         transform: translateY(10px)
     }
     to {
         transform: translateY(-10px)
     }
-}
+}*/
 @media screen and (max-width: 768px){
     .header-container {
         display: flex;
