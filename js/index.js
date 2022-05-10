@@ -10,7 +10,7 @@ const sr = ScrollReveal({
     distance: '68px',
     duration: 2500,
     delay: 400,
-    //reset: true
+    reset: true
 })
 
 sr.reveal('.container-conteudo',{interval: 50})
