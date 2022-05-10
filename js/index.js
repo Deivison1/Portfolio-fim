@@ -17,5 +17,5 @@ sr.reveal('.container-conteudo',{interval: 50})
 sr.reveal('.conteudo-img', {delay: 500, interval: 50})
 sr.reveal('.paragrato-conteudo', {delay: 600, interval: 50})
 sr.reveal('.caixa-project', {delay: 700, interval: 50})
-sr.reveal('.nbvki', {delay: 800, origin: 'left', interval: 20})
+sr.reveal('.nbvki', {delay: 700, origin: 'left', interval: 10})
 
