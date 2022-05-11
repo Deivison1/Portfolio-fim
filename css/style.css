@@ -5,6 +5,7 @@
     padding: 0px;
 }
 :root{
+    
     --cvdrt-color: #47ade1;
     --titulo-menu: white;
     --link-reader: white;
@@ -20,10 +21,10 @@
     --h1-footer-color:white;
     --button-color:purple;
     --body-gradient:rgb(101, 33, 101);
-    --box-shadow-color:rgb(80, 61, 80);
     --caixa-project-color:rgba(84, 83, 83, 0.393);
 }
 .light-mode{
+    --border-color:hsl(228, 99%, 98%);
     --cvdrt-color: #47ade1;
     --icon-git:white;
     --teck-color:white;
@@ -35,13 +36,13 @@
     --back-reader-footer:rgba(0, 0, 0, 0.518);
     --footer-color:white;
     --button-color:silver;
-    --box-shadow-color:rgb(35, 34, 35);
-    --caixa-project-color:rgba(73, 70, 70, 0.139); 
+    --box-shadow-color:0 12px 16px hsl(228, 66%, 45%, .1);
+    --caixa-project-color:#fff; 
 }
 
 body{
     color: var(--text-color);
-    background-color:var(--body-color);
+    background: var(--body-color);
     font-family: 'Poppins', sans-serif;
     transition: 0.6s;
 }
@@ -212,6 +213,7 @@ a{
     width: 300px;
     border-radius: 16px;
     margin: 1em;
+    border: .15rem solid var(--border-color);
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
@@ -221,7 +223,7 @@ a{
 }
 .caixa-project:hover{
     transition: 0.3s;
-    box-shadow: 1px 1px 6px 2px var(--box-shadow-color);
+    box-shadow: var(--box-shadow-color);
 
 }
 .div-img{
@@ -304,7 +306,7 @@ a{
 }
 .dradl p{
 
-    font-size: 1em;
+    font-size: 14px;
     line-height: 1.4em;
     text-indent: 5px;
     margin-top: 10px;
