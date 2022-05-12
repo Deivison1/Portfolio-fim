@@ -184,8 +184,8 @@ a{
     
     margin-top: 20px;
     border-radius: 10px;
-    width: 400px;
-    height: 350px;
+    width: 380px;
+    height: 300px;
     box-shadow: var(--shadow-color);
     /*animation: move 1s infinite alternate;*/
 }
