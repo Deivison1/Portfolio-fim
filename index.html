@@ -1,151 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
 
-    <title>Site pessoal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-   
- </head>
+</head>
+
 <body>
-    
-    <header class="header-container">
-        <div class="container-principal" >
-            <h1 class="titulo-menu">Deivison Santos</h1>
-            <p class="paragrafo-reader">
-                <strong>Front End Developer</strong></p>
-            
-                <div>
-                    <input type="checkbox" class="checkbox" id="chk">
-                    <label class="labLabel" for="chk">
-                        <i class='bx bxs-moon'></i>
-                        <i class='bx bx-sun'></i>
-                        <div class="ball"></div>
-                    </label>
-                </div>
-        </div>
+    <header class="header" id="header">
+        <nav class="nav container">
 
-        <div class="menu">
-            <nav class="nav-menu">
-                
-                <a class="link-reader" href="#contact">Contato</a>
-                <a class="link-reader" href="#container-caixa">Projetos</a>
-                <a class="link-github"href="https://github.com/Deivison1?tab=repositories" target="_blank">Entrar
-                <i class="bx bxl-github bxlEntrar"></i>
-                </a>
-                    
-            </nav>
-        </div>
-    </header>
-        
-    <main class="container-conteudo">
-        <div>
-            <div class="conteudo">
-                <img class="conteudo-img"src="img\img-m-estudando.png" alt="">
-                <p class="paragrato-conteudo">Olá! Meu nome é Deivison Santos, atualmente estou cursando ADS - Análise e desenvolvimento de sistemas na FMU em São Paulo - SP para me tornar um desenvolvedor focado no front end.
-                    Tecnologias e discliplinas realacioandas a programação que tenho conhecimento são: <span>HTML5, CSS3, JAVASCRIPT, NODE.JS SQL SERVER, JAVA, ALGORITMOS E ESTRUTURAS DE DADOS</span>. Criei esse site para demonstrar o que estou aprendendo ao longo do curso, aqui você encontrará meus projetos pessoais e exercícios práticos.
-                
+            <div>
+                <h1 class="nav-logo">
+                    Deivison Santos
+                </h1>
+                <p class="nav-subtitulo">
+                    Front end Developer
                 </p>
             </div>
-        </div>
 
-        <div class="titulo-container">
-            <h1>Tecnologias que conheço</h1>
-        </div>
+            <div class="nav-menu" id="nav--menu">
+                <ul class="nav-lista">
+                    <i class='bx bxs-moon change-theme'id="theme-button"></i>
+                    <li class="nav-item">
+                        <a href="#home-conteudo" class="nav-link">Home</a> 
+                    </li>
 
-        <section class="container-skills" id="container-skills">
-            <div class="skills">
-                <div class="skills-descricao">
-                    <i class='bx bxl-html5'></i>
-                    <h1>HTML5</h1>
-                    <p>A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto usado para fazer referência a outros textos, enquanto uma linguagem de marcação é composta por uma série de marcações que dizem para os servidores da web qual é o estilo e a estrutura de um documento.<p>
+                    <li class="nav-item">
+                        <a href="#titulo-skills" class="nav-link">Skills</a> 
+                    </li> 
+
+                    <li class="nav-item">
+                        <a href="#titulo-project" class="nav-link">Projetos</a> 
+                    </li> 
+
+                    <li class="nav-item">
+                        <a href="#titulo-contato" class="nav-link">Contato</a> 
+                    </li> 
+
+                </ul>
+
+                <div class="nav-close" id="nav--close">
+                    <i class='bx bx-x'></i>
                 </div>
             </div>
-            <div class="skills">
-                <div class="skills-descricao">
-                    <i class='bx bxl-css3'></i>
-                    <h1>CSS3</h1>
-                    <p>O CSS é uma linguagem de design gráfico escrita dentro do código HTML de um site e que permite criar páginas de forma mais precisa, além de aplicar estilos, como cores, margens, formas, tipos de letras etc.
-                    Ela é a sigla de Cascading Style Sheets, que em português pode ser traduzido como Folhas de Estilo em Cascatas, foi esenvolvido pela W3C em 1996.
-                    <p>
-                </div>
+            <!-- Botão Toggle -->
+
+            <div class="nav-toggle" id="nav--toggle">
+                <i class='bx bx-grid-alt'></i>
             </div>
+        </nav>
+    </header>
 
-            <div class="skills">
-                <div class="skills-descricao">
-                    <i class='bx bxl-javascript'></i>
-                    <h1>JAVASCRIPT</h1>
-                    <p>
-                        JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.
-                    <p>
+    <main class="home-conteudo" id="home-conteudo">
+
+        <section class="home-section">
+
+            <div class="home-descricao">
+                <div class="home-img">
+                    <img class="img" src="assets/img/foto-perfil2.png" alt="img">
                 </div>
-            </div>
-
-            <div class="skills">
-                <div class="skills-descricao">
-                    <i class='bx bxl-nodejs'></i>
-                    <h1>
-                        NODE.JS
-                    </h1>
-                        <p>
-                            O Node.js pode ser definido como um ambiente de execução Javascript server-side.
-
-                            Isso significa que com o Node.js é possível criar aplicações Javascript para rodar como uma aplicação standalone em uma máquina, não dependendo de um browser para a execução, como estamos acostumados.
-                            
-                        </p>
-                </div>
-            </div>
-           
-
-            <div class="skills">
-                <div class="skills-descricao">
-                    <i class='bx bxl-java'></i>
-                    <h1>
-                        JAVA
-                    </h1>
-                        <p>
-                            Como linguagem de programação, o código Java é baseado em classes e orientado a objetos, com foco em segurança, portabilidade e alta performance. Também tem como principais características uma sintaxe similar a C/C++, extensa biblioteca de rotinas e APIs para trabalhar com recursos de rede, e um poderoso gerenciamento automático de memória.
-                        </p>
-                </div>
-            </div>
-
-            <div class="skills">
-                <div class="skills-descricao">
-                    <img src="img\Diagrama.png" alt="">
-                    <h1>
-                       Algoritimo 
-                    </h1>
-                        <p>
-                            Um algoritmo é uma sequência de instruções bem definidas, normalmente usadas para resolver problemas de matemática específicos, executar tarefas, ou para realizar cálculos e equações. A origem da palavra “algoritmo” remete a Al Khowarizmi, famoso matemático árabe do século IX. 
-                        </p>
+                
+                <div class="texto-descricao">
+                    <p>Olá, meu nome é Deivison Santos, sou desenvolvedor front end, faço analise e desenvolvimento de sistemas pela FMU - Em São Paulo. Esse é o meu portfólio, nele contém algumas de minhas habilidades na programação, como: Desenvolvimento de Landing pages, Web Pages, Portfólios e aplicações que manipula e armezana dados (CRUD). Usano Git e Github para versionamento de código.</p>
                 </div>
             </div>
         </section>
-        
-        <div class="titulo-container">
-            <h1>Projetos e Exercícios</h1>
+
+        <div class="titulo" id="titulo-skills">
+            <span>Hard Skills</span>
         </div>
-        <section id="container-caixa"class="container-caixa">
+        <section class="skills-section" >
+            <div class="skills-descricao">
+                <div class="skill">
+                    <i class='bx bxl-html5 icon-tech'></i>
+                        <h3>HTML</h3>
+                    <p>
+                        A Linguagem de marcação de Hipertexto (HTML) é uma linguagem que compõe a maior parte das páginas da internet e dos aplicativos online.
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <i class='bx bxl-css3 icon-tech'></i>
+                    <h3>CSS</h3>
+                    <p>
+                        Cascading Style Sheets( ou simplesmente CS), pela qual se define estilos para um projeto web (página de internet).
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <i class='bx bxl-javascript icon-tech'></i>
+
+                    <h3>JAVASCRIPT</h3>
+                    <p>
+                        O JavaScript é uma linguagem de programação de alto nível voltada para o desenvolvimento web.
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <i class='bx bxl-nodejs icon-tech'></i>
+                    
+                    <h3>
+                        NODE.JS
+                    </h3>
+
+                    <p>
+                        É uma plataforma em que é possível criar aplicações Javascript sem depender de um browser para a execução. Sua execução em single-thread não exige resposta a cada requisição.  
+                    </p>
+                </div>
+
+               <!--<div class="skill">
+                    <h3>
+                        React.Js
+                    </h3>
+
+                    <p>
+
+                    </p>-->
+                    
+                </div>
+
+                <div class="skill">
+                    <img src="assets/img/Diagrama.png" alt="">
+                    
+                    <h3>ALGORITMO</h3>
+                    <p>
+                        Um algoritmo é uma sequência de instruções bem definidas, normalmente usadas para resolver problemas de matemática específicos, executar tarefas, ou para realizar cálculos e equações.  
+                    </p>
+                </div>
+
+                <div class="skill">
+                    <i class='bx bxl-java icon-tech'></i>
+                    
+                    <h3>JAVA</h3>
+                    <p>
+                        Como linguagem de programação, o código Java é baseado em classes e orientado a objetos, com foco em segurança, portabilidade e alta performance. Extensa biblioteca de rotinas e APIs para trabalhar com recursos de rede.  
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="titulo" id="titulo-project">
+            <span>Projetos</span>
+        </div>
+
+        <section class="section-project">
 
             <div class="caixa-project proje1">
                 <div class="div-img">
-                    <div class="lmkda">
+                        <div class="lmkda">
                             <p class="tech">HTML</p>
                             <p class="tech">CSS</p>
-                            
                         </div>
+
                         <div class="sc-ghtn blsder">
                             <span class="sc-trsw cvdrt">
-                                Desktop</span>
+                                Desktop
+                            </span>
                             <span class="sc-ghtn cvdrt">
                                 Javascript</span>
                         </div>
-                           <img clas="img-caixa"src="img\PRINT-IMOB.png" alt="">
+                           <img clas="img-caixa"src="assets\img\crud.png" alt="">
+                       </div>
+                    <div class="dradl">
+                        <h1>CRUD</h1>
+                        <p>Um aplicação que simula o cadastro de clientes no LocalStorage em uma banco de dados, que poderá criar, atulizar, editar e excluir o cliente, o basiso em um sistema de vendas o<span class="sc-dresw cxsd"> <strong> CRUD.</strong></span></p>
+                    </div>
+                    <a class="sc-werf drwap"href="https://deivison1.github.io/Modal-Crud/" target="_blank">
+                        <button class="bto-detalhes">Detalhes</button></a>
+                </div>
+            </div>
+
+            <div class="caixa-project proje1">
+                <div class="div-img">
+                        <div class="lmkda">
+                            <p class="tech">HTML</p>
+                            <p class="tech">CSS</p>
+                        </div>
+
+                        <div class="sc-ghtn blsder">
+                            <span class="sc-trsw cvdrt">
+                                Desktop
+                            </span>
+                            <span class="sc-ghtn cvdrt">
+                                Javascript</span>
+                        </div>
+                           <img clas="img-caixa"src="assets\img\PRINT-IMOB.png" alt="">
                        </div>
                     <div class="dradl">
                         <h1>IMOB</h1>
@@ -165,7 +212,7 @@
                         <div class="sc-ghtn blsder">
                             <span class="sc-trsw cvdrt">Desktop</span>
                         </div>
-                           <img clas="img-caixa"src="img\projeto-android.png" alt="">
+                           <img clas="img-caixa"src="assets\img\projeto-android.png" alt="">
                        </div>
                     <div class="dradl">
                         <h1>Android</h1>
@@ -187,7 +234,7 @@
                             <span class="sc-trsw cvdrt">Desktop</span>
                             <span class="sc-trsw cvdrt">Javascript</span>
                         </div>
-                           <img clas="img-caixa"src="img\analizar-numeros.png" alt="">
+                           <img clas="img-caixa"src="assets\img\analizar-numeros.png" alt="">
                        </div>
                     <div class="dradl">
                         <h1>Analizar números</h1>
@@ -208,7 +255,7 @@
                             <span class="sc-trsw cvdrt">Desktop</span>
                             
                         </div>
-                           <img clas="img-caixa"src="img\pormulario.png" alt="">
+                           <img clas="img-caixa"src="assets\img\pormulario.png" alt="">
                        </div>
                     <div class="dradl">
                         <h1>Formulário de cadastro</h1>
@@ -225,15 +272,15 @@
                                 <p class="tech">CSS</p>
                                 
                             </div>
-                            <div class="sc-ghtn blsder">
-                                <span class="sc-trsw cvdrt">Desktop</span>
-                                <span class="sc-trsw cvdrt">Javascript</span>
-                            </div>
-                               <img clas="img-caixa"src="img\vericar-idade.png" alt="">
-                           </div>
-                        <div class="dradl">
-                            <h1>verificar idade</h1>
-                            <p>Essa aplicação é capaz de mostrar a <span class="sc-drzresw cxsd"><strong>idade e gênero</strong></span> do usuário com base nas informações adicionadas, mostrando no fim uma foto como um exemplo de como seria a quela pessoa.</p>
+                    <div class="sc-ghtn blsder">
+                        <span class="sc-trsw cvdrt">Desktop</span>
+                        <span class="sc-trsw cvdrt">Javascript</span>
+                    </div>
+                        <img clas="img-caixa"src="assets\img\vericar-idade.png" alt="">
+                    </div>
+                <div class="dradl">
+                    <h1>verificar idade</h1>
+                        <p>Essa aplicação é capaz de mostrar a <span class="sc-drzresw cxsd"><strong>idade e gênero</strong></span> do usuário com base nas informações adicionadas, mostrando no fim uma foto como um exemplo de como seria a quela pessoa.</p>
                         </div>
                         <a class="sc-werf drwap"href="https://deivison1.github.io/verificando-idade-sexo.js/" target="_blank">
                             <button class="bto-detalhes">Detalhes</button></a>
@@ -250,11 +297,11 @@
                                 <span class="sc-trsw cvdrt">Desktop</span>
                                 <span class="sc-trsw cvdrt">Javascript</span>
                             </div>
-                               <img clas="img-caixa"src="img\Cor-de-fundo.png" alt="">
+                               <img clas="img-caixa"src="assets\img\Cor-de-fundo.png" alt="">
                            </div>
                         <div class="dradl">
                             <h1>Mudando a cor de fundo</h1>
-                            <p>Com <span class="sc-drzresw cxsd"><strong>Javascript</strong></span> consigo mudar a cor de fundo dinâmicamente com base na hora dia, mostrando uma imagem lustrativa daquele periodo.</p>
+                            <p>Com <span class="sc-drzresw cxsd"><strong>Javascript</strong></span> podemos mudar a cor de fundo dinâmicamente com base na hora dia, mostrando uma imagem lustrativa daquele periodo.</p>
                         </div>
                         <a class="sc-werf drwap"href="https://deivison1.github.io/mudando-fundo-dinamicamente/" target="_blank">
                             <button class="bto-detalhes">Detalhes</button></a>
@@ -262,13 +309,18 @@
                 </div>
             </div>
         </section>
+
+        <div class="titulo" id="titulo-contato">
+            <span>Contato</span>
+        </div>
     </main>
     
 
-    <footer id="contact"class="sc-derse nbvki">
         
+        
+    <footer id="contact"class="sc-derse nbvki">
         <div class="sc-cdaer fsdr">
-            <h3>Contato e Repositório |</h3>
+            <h3>Contato e Repositório </h3>
             <a href="https://mail.google.com/mail/u/1/#inbox">
                 <i class="bx bxl-gmail bxl"></i>
             </a>
@@ -284,9 +336,13 @@
             <p class="paragrafo-footer">Front End Developer</p>
         </div>
     </footer>
-    
-    <script src="js/scrollreveal.min.js"></script>
+ 
+    <script src="assets/js/scrollreveal.min.js"></script>
 
-    <script src="js/index.js"></script>
+    <script src="assets/js/main.js"></script>
+    
 </body>
+
 </html>
+
+
