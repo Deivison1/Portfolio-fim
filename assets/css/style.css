@@ -80,9 +80,6 @@ a{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
-main{
-    overflow: hidden;
-}
 .header{
     position: fixed;
     width: 100%;
