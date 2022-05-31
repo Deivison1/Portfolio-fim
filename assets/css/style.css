@@ -4,7 +4,8 @@
                   /* ===== Cores ===== */
 
         --cor-skills:  rgb(250, 239, 224);
-        --cor-de-fundo:hsl(0, 0%, 100%);
+        --cor-de-fundo:hsla(0, 0%, 100%, 0.776);
+        --sobra-descri: black;
         --nav-link-color:black;
         --nav-item-color: white;
         --nav-menu-color:hsl(228, 39%, 59%);
@@ -29,6 +30,7 @@ body.dark-theme{
         
 
          --cor-de-fundo: hsl(228, 12%, 8%);
+         --sobra-descri: white;
          --nav-link-color:hsl(228, 39%, 59%);
          --nav-menu-color:hsl(228, 12%, 8%);
          --titulo-color: black;
@@ -80,6 +82,9 @@ a{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+main{
+    overflow: hidden;
+}
 .header{
     position: fixed;
     width: 100%;
@@ -96,6 +101,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .nav-subtitulo{
     color: var(--primary-color);
@@ -144,7 +150,7 @@ a{
     border-radius: .25rem;
 }
 .nav-item:hover{
-    transition: .4s ease;
+    transition: 1.2s;
     background-color: white;
 }
 .nav-close{
@@ -177,24 +183,23 @@ a{
     padding: 15px;
     max-width: 800px;
     border-radius: 6px;
-    box-shadow: 1px 8px 1px white;
+    box-shadow: 1px 4px 1px  var(--sobra-descri);
     background-color: var(--primary-color);
 }
 .home-img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 131px;
-    height: 130px;
+    width: 145px;
+    height: 145px;
     margin-right: 1.25rem;
     border-radius: 50%;
-    border: 4px solid black;
-   
+    box-shadow: 0 2px 11px black;
 }
-
 .img{
     width: 150px;
-    height: 150px;  
+    height: 150px; 
+     
 }
 .titulo{
     
@@ -204,7 +209,7 @@ a{
     margin-top: 10rem;
     margin-bottom: 5rem;
     border-radius: .25rem;
-    box-shadow: 1px 8px 1px white;
+    box-shadow: 1px 4px 1px var(--sobra-descri);
     background-color: var(--primary-color);
 }
 .skills-section{
@@ -240,21 +245,21 @@ a{
     height: 220px;
     margin: 15px;
     border-radius: 6px;
-    box-shadow: 0 12px 16px var(--border-color);;
+    box-shadow: 0 4px 12px var(--border-color);;
     color: var(--text-color);
     font-size: var(--normal-font-size);
     background-color: var(--cor-container)
 }
 .skill:hover{
-    
-    background-color: #383a3d43;
-    transition: 0.3s ease;
+    transition: 1.5s;
+    background-color: #d0d4dd1b;
 }
 .icon-tech{
     margin-top: 10px;
     font-size: 50px;
 }
-.bxl-html5{
+.bxl-html5,
+.bxl-git{
     color: #ee6225;
 }
 .bxl-css3{
@@ -491,6 +496,5 @@ button{
         margin-bottom: 5px;
     }
 }
-
 
 
