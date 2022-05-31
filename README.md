@@ -10,8 +10,11 @@
   <li>JAVASCRIPT</li>
   <li><a href="https://deivison1.github.io/Portfolio-fim/">Link do site</a></li>
   </ul>
+  
+  <p> Os visitantes podem escolher o tema que mais lhe agrada, opções: padrão e escuro.
+  Espero que gostem!</p>
 </nav>
-
-<img src="" alt="" >
+<p> Imagem ilustrativa do Site/Portfólio </p>
+<img src="https://github.com/Deivison1/Portfolio-fim/blob/main/assets/img/print-site.png" alt="" >
 
   </div>
