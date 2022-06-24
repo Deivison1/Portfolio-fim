@@ -80,7 +80,7 @@ a{
 .container{
     max-width: 1024px;
     margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    
 }
 .header{
     position: fixed;
@@ -116,6 +116,7 @@ a{
     color: var(--primary-color);
     font-size: 1.25rem;
     cursor: pointer;
+    
 }
 @media screen and (max-width: 767px) {
     .nav-menu{
