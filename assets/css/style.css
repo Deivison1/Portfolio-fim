@@ -477,13 +477,24 @@ button{
 }
 @media screen and (max-width: 767px){
     
+    .home-section,
+    .skills-section{
+        width: 100%;
+    }
+    .home-img{
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
     .home-descricao{
         
         flex-direction: column;
+        width: 85%;
+        height: auto;
+        margin: auto;
     }
-    .home-img{
-       
-       margin-bottom: 5px;
+    .skill{
+        width: 85%;
+
     }
     .nbvki{
         height: auto;
@@ -497,21 +508,10 @@ button{
         margin-bottom: 5px;
     }
 }
-
-@media screen and (max-width: 395px){
-    .home-section{
-        width: 100%;
+@media screen and (max-width: 321px){
+    .caixa-project{
+        width: 90%;
     }
-    .home-descricao{
-
-        width: 270px;
-        height: auto;
-        margin: auto;
-        
-    }
-    .home-img{
-        margin-right: 0;
-    }
-    
 }
+
 
