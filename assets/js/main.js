@@ -1,4 +1,3 @@
-
 function scrollHeader(){
   const header = document.getElementById('header')
   if(this.scrollY >= 50) {
