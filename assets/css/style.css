@@ -70,6 +70,7 @@ body{
 .bxs-moon{
     color: var(--cor-icon);
 }
+
 ul{
     list-style: none;
 }
@@ -120,6 +121,7 @@ a{
     cursor: pointer;
     
 }
+
 @media screen and (max-width: 851px) {
     .nav-menu{
         position: fixed;
