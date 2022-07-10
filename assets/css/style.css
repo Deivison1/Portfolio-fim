@@ -78,9 +78,7 @@ ul{
 a{
     text-decoration: none;
 }
-.container{
-    margin-left: 1.5rem;
-}
+
 .header{
     display: flex;
     justify-content: center;
@@ -516,7 +514,8 @@ button{
         margin: auto;
     }
     .skill{
-        width: 90%;
+        height: auto;
+        width: 95%;
 
     }
     .nbvki{
